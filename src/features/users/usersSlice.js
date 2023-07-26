@@ -11,12 +11,15 @@ export const usersSlice = createSlice({
       state.usersDB.push(action.payload);
     },
     deleteUser: (state, action) => {
-          state.usersDB = state.usersDB.filter((user) => user.id!== action.payload);
-        },
+      state.usersDB = state.usersDB.filter(
+        (user) => user.id !== action.payload
+      );
+    },
+    deleteAllUsers: (state) => {
+      state.usersDB = [];
+    },
   },
 });
 
-
-
-export const { addUser, deleteUser } = usersSlice.actions;
+export const { addUser, deleteUser, deleteAllUsers } = usersSlice.actions;
 export default usersSlice.reducer;

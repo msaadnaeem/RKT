@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { addUser } from "../features/users/usersSlice";
 import fetchData from "../helpers/fetchData";
 import DisplayUsers from "./DisplayUsers";
+import DeleteAllUsers from "./DeleteAllUsers";
 const UserDetails = () => {
   const dispatch = useDispatch();
   return (
@@ -21,6 +22,8 @@ const UserDetails = () => {
         <ul>
           <DisplayUsers />
         </ul>
+        <hr />
+        <DeleteAllUsers/>
       </div>
     </Wrapper>
   );

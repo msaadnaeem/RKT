@@ -37,7 +37,7 @@ const StyledDeleteIcon = styled(MdDeleteForever)`
   color: #ff0000;
   cursor: pointer;
   &:hover {
-    color: #cc0000; /* Replace this with your desired hover color */
+    color: #cc0000; 
   }
 `;
 export default DisplayUsers;
