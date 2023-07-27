@@ -15,9 +15,7 @@ export const usersSlice = createSlice({
         (user) => user.id !== action.payload
       );
     },
-    deleteAllUsers: (state) => {
-      state.usersDB = [];
-    },
+    deleteAllUsers: () => initialState,
   },
 });
 
